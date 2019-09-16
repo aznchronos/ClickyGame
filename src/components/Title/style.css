@@ -1,0 +1,9 @@
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  /* text-decoration: underline; */
+  color: white;
+  margin-bottom: 50px;
+  background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}

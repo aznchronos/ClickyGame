@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./components/Wrapper/Wrapper";
 import Card from "./components/Card";
-import Header from "./components/Header"
+import Header from "./components/Header/Header"
 import cards from "./cards.json";
+import Title from "./components/Title"
 
 class App extends Component {
   state = {
@@ -44,8 +45,10 @@ class App extends Component {
   // Map over this.state.cards and render a cardCard component for each card object
   render() {
     return (
+      <div>
+      <Title />
+      <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
       <Wrapper>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
         {this.state.cards.map(card => (
           <Card
             clickCount={this.clickCount}
@@ -55,6 +58,7 @@ class App extends Component {
           />
         ))}
       </Wrapper>
+      </div>
     );
   }
 }

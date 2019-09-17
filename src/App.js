@@ -46,8 +46,8 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Title />
-      <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+      <Title>Clicky Game</Title>
+      <Header score={this.state.score} highscore={this.state.highscore}></Header>
       <Wrapper>
         {this.state.cards.map(card => (
           <Card

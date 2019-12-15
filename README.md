@@ -24,9 +24,9 @@ To Be Added Later
 ## Tech/Framework Used
 <b>Built with</b>
 - [React](https://reactjs.org)
+- [Node](https://nodejs.org)
 - [JavaScript]
 - [HTML]
 - [CSS]
-- [Node]
 
 MIT © [Andy](https://github.com/aznchronos)
